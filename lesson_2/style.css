@@ -1,0 +1,8 @@
+#mainDiv {position: relative}
+#divRes {position: absolute; /*background-color: aqua;*/ width: 30%; height: 100%; top: 0;left: 70% }
+
+#textArea {position: relative; width: 30%; height: 200px}
+#parseString {position: absolute; margin-left: 10%}
+#viewRes {position: relative;}
+
+#infoStr {position: absolute; /*background-color: blueviolet;*/  width: 30%; height: 200px; left: 69.6%}
