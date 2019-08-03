@@ -8,12 +8,69 @@
 	
 	<body>
 		
-	<h1 id="timerHeader">Таймер</h1>
-		
 	<div id="timerDiv">
-		<!-- -->
+			<h1 id="timerHeader">Таймер</h1><br>
+			Минуты: &nbsp;<input id="minutsTimerInput" type="number" placeholder="минуты"><br><br>
+			Секунды: <input id="secondsTimerInput" type="number" placeholder="секунды">&nbsp;&nbsp;
+			<input id="startTimer" type="button" value="Старт" onclick="startTimer()">&nbsp;&nbsp;
+			<input id="suspendTimer" type="button" value="Приостановить" onclick="pauseTimer()" disabled>
+			<br>
+			<br>
+			<div id="rezultTimerDiv">
+					<label id="resultTimerLabel">00:00</label>
+			</div>
 	</div>
-		
+	<br>
+	<br>
+	<div id="stopwatchDiv">
+		<h1>Секундомер</h1><br>
+		<div id="buttonsDiv">
+		<input id="startStopWatch" type="button" value="Старт" onclick="start()"><br><br>
+		<input id="pointStopWatch" type="button" value="Круг" disabled onclick="pointTime()"><br><br>
+		<input id="resetStopWatch" type="button" value="Сброс" disabled onclick="reset()">
+		</div>
+			<div id="labelDiv">
+				<label id="stopWatchLabel">00:00:00</label>
+			</div>
+			<br>
+			<div id="stopWatchPointLabel">
+				<label id="pointTimeLabel"></label>
+			</div>
+	</div>
+	<br>
+	<br>
+	<div id="alarmDiv">
+		<h1>Будильник</h1><br>
+		<div id="currentTimeDiv">
+			<label>Текущее время:</label><br>
+			<label id="currTime"></label>
+		</div>
+		<br>
+		<div id="settingAlarmDiv">
+			<input id="timeAlarmInput" type="time"> Время сработки будильника<br><br>
+			<select id="selectSoundInput">
+				<option value="sound_1">Звук 1</option>
+				<option value="sound_2">Звук 2</option>
+				<option value="sound_3">Звук 3</option>
+				<option value="sound_4">Звук 4</option>
+			</select> Звук будильника <input id="checkSoundBtn" type="button" value="Проверить" onclick="checkSound()"><br><br>
+			<select id="replayAlarmInput">
+					<option value="0">Без повтора</option>
+					<option value="5">5 минут</option>
+					<option value="10">10 минут</option>
+					<option value="15">15 минут</option>
+					<option value="20">20 минут</option>
+			</select> Повтор<br><br>
+			<input id="actionAlarmInput" type="checkbox" disabled> Активация будильника<br><br>
+
+			<div id="viewAlarmDiv">
+				<label id="beforTimeLabel">Осталось 00:12:50</label><br><br>
+				<input id="turnOffAlarmBtn" type="button" value="Выключить" disabled onclick="turnOffAlarm()"><br><br>
+				<input id="replayAlarmBtn" type="button" value="Повтор" disabled onclick="replayAlarm()">
+
+			</div>
+		</div>
+	</div>
 		
 	<script src="timer.js"></script>
 	<script src="stopwatch.js"></script>

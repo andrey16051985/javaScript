@@ -1,4 +1,80 @@
-#timerHeader{
-text-align: center;
-background-color: aqua;
+h1 {
+    margin: 0px;
+    text-align: center;
 }
+
+#timerDiv {
+    height: 220px;
+    position: relative;
+    padding: 20px;
+    border: 5px solid rgb(101, 181, 206);
+}
+
+#rezultTimerDiv {
+    text-align: center;
+}
+
+#resultTimerLabel {
+    font-size: 500%;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#stopwatchDiv {
+    /*height: 220px;*/
+    position: relative;
+    padding: 20px;
+    border: 5px solid rgb(101, 181, 206);
+}
+
+#buttonsDiv {
+    position: absolute;
+    /*top: 50px;*/
+}
+
+#labelDiv {
+    text-align: center;
+}
+
+#stopWatchLabel {
+    font-size: 500%;
+}
+
+#stopWatchPointLabel {
+    text-align: center;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#alarmDiv {
+    /*height: 220px;*/
+    position: relative;
+    padding: 20px;
+    border: 5px solid rgb(101, 181, 206);
+}
+
+#currentTimeDiv {
+    text-align: center;
+}
+
+#currTime {
+    font-family: Calibri;
+    font-size: 200%;
+}
+
+#settingAlarmDiv {
+    position: relative;
+}
+
+#viewAlarmDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    display: none;
+}
+
+#beforTimeLabel{
+    font-size: 150%;
+}
+
